@@ -196,6 +196,7 @@ public class SongPlaying extends Fragment implements View.OnClickListener, SeekB
             songProgressBar.setProgress(player.progress());
             complTime.setText(player.completedTime());
             remTime.setText("-" + player.remainingTime());
+
             // schedule another update for every 500 msec later
             handler.postDelayed(songProgressUpdate, 500);
         }
