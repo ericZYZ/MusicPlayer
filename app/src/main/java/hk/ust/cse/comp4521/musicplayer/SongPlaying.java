@@ -79,6 +79,8 @@ public class SongPlaying extends Fragment implements View.OnClickListener, SeekB
         player = MusicPlayer.getMusicPlayer();
         player.addObserver(this);
 
+
+
         // setRetainInstance(true);
         handler = new Handler();
 
